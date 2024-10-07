@@ -1,0 +1,13 @@
+﻿global using AutoMapper;
+global using KafkaConsumerSample.Core;
+global using KafkaConsumerSample.Core.Domain;
+global using KafkaConsumerSample.Core.DTO;
+global using KafkaConsumerSample.Persistence.Context;
+global using KafkaConsumerSample.Persistence.Interfaces.Repositories;
+global using KafkaConsumerSample.Persistence.Interfaces.Services;
+global using KafkaConsumerSample.Persistence.Mapping;
+global using KafkaConsumerSample.Persistence.Repositories;
+global using KafkaConsumerSample.Persistence.Services;
+global using Microsoft.EntityFrameworkCore;
+global using Microsoft.EntityFrameworkCore.Metadata.Builders;
+global using Microsoft.Extensions.DependencyInjection;

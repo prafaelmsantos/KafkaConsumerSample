@@ -3,9 +3,51 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.10.35004.147
 MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "0_Core", "0_Core", "{2777AED4-5F9F-4606-B090-57044B8B8917}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "1_Infrastructure", "1_Infrastructure", "{2DBED34A-18F3-4E22-92DF-7F3CC637CC16}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "2_API", "2_API", "{59A4A875-C671-476F-9D60-F3C1DB9D7995}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaConsumerSample.Core", "src\Core\KafkaConsumerSample.Core.csproj", "{56768615-9CDC-4FD2-856F-56D43F153FD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaConsumerSample.Consumer", "src\Infrastructure\KafkaConsumerSample.Consumer\KafkaConsumerSample.Consumer.csproj", "{0F9CEC74-C41C-4866-AA2D-176AF9EBF217}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaConsumerSample.Persistence", "src\Infrastructure\KafkaConsumerSample.Persistence\KafkaConsumerSample.Persistence.csproj", "{B8169E6E-6D67-428C-AC3E-211D100E0197}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KafkaConsumerSample.API", "src\API\KafkaConsumerSample.API.csproj", "{6E0160E0-4A47-4B60-B575-72482E881AFE}"
+EndProject
 Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{56768615-9CDC-4FD2-856F-56D43F153FD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{56768615-9CDC-4FD2-856F-56D43F153FD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{56768615-9CDC-4FD2-856F-56D43F153FD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{56768615-9CDC-4FD2-856F-56D43F153FD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0F9CEC74-C41C-4866-AA2D-176AF9EBF217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0F9CEC74-C41C-4866-AA2D-176AF9EBF217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0F9CEC74-C41C-4866-AA2D-176AF9EBF217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0F9CEC74-C41C-4866-AA2D-176AF9EBF217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8169E6E-6D67-428C-AC3E-211D100E0197}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8169E6E-6D67-428C-AC3E-211D100E0197}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8169E6E-6D67-428C-AC3E-211D100E0197}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8169E6E-6D67-428C-AC3E-211D100E0197}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6E0160E0-4A47-4B60-B575-72482E881AFE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6E0160E0-4A47-4B60-B575-72482E881AFE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6E0160E0-4A47-4B60-B575-72482E881AFE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6E0160E0-4A47-4B60-B575-72482E881AFE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{56768615-9CDC-4FD2-856F-56D43F153FD9} = {2777AED4-5F9F-4606-B090-57044B8B8917}
+		{0F9CEC74-C41C-4866-AA2D-176AF9EBF217} = {2DBED34A-18F3-4E22-92DF-7F3CC637CC16}
+		{B8169E6E-6D67-428C-AC3E-211D100E0197} = {2DBED34A-18F3-4E22-92DF-7F3CC637CC16}
+		{6E0160E0-4A47-4B60-B575-72482E881AFE} = {59A4A875-C671-476F-9D60-F3C1DB9D7995}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {A55CA55C-F03F-4EE3-887E-C9917A049735}
