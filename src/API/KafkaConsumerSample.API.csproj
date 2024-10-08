@@ -27,6 +27,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\Infrastructure\KafkaConsumerSample.Consumer\KafkaConsumerSample.Consumer.csproj" />
     <ProjectReference Include="..\Infrastructure\KafkaConsumerSample.Persistence\KafkaConsumerSample.Persistence.csproj" />
   </ItemGroup>
 

@@ -1,4 +1,5 @@
 ﻿global using Base.Lib.Kafka.ServiceRegistration;
+global using KafkaConsumerSample.Consumer.ServicesRegistry;
 global using KafkaConsumerSample.Persistence.Context;
 global using KafkaConsumerSample.Persistence.Interfaces.Services;
 global using KafkaConsumerSample.Persistence.ServicesRegistry;

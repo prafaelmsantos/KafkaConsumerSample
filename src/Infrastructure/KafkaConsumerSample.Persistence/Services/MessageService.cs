@@ -36,6 +36,22 @@
                 throw new Exception($"{DomainResources.GetAllMessagesAsyncException} {ex.Message}");
             }
         }
+
+        public async Task<MessageDTO> AddMessageAsync(MessageDTO messageDTO)
+        {
+            try
+            {
+                Message message = new(messageDTO.Content, messageDTO.ExternalId);
+
+                await _messageRepository.AddAsync(message);
+
+                return _mapper.Map<MessageDTO>(message);
+            }
+            catch (Exception ex)
+            {
+                throw new Exception($"{DomainResources.AddMessageAsyncException} {ex.Message}");
+            }
+        }
         #endregion
     }
 }

@@ -8,6 +8,7 @@
     {
         #region Message
         public static readonly string GetAllMessagesAsyncException = "Erro ao tentar encontrar mensagens.";
+        public static readonly string AddMessageAsyncException = "Erro ao tentar criar a mensagem.";
         #endregion
     }
 }

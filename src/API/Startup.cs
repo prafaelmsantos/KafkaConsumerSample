@@ -16,6 +16,7 @@
             //Services
             services.AddKafkaServices();
             services.AddPersistenceServices();
+            services.AddConsumerServices();
 
             services.AddControllers()
                     .AddJsonOptions(x => x.JsonSerializerOptions.Converters.Add(new JsonStringEnumConverter()))
